@@ -1,0 +1,37 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mother</th>
+        <th scope="col">Father</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of persons">
+        <th scope="row">{{person.id}}</th>
+        <td>{{person.name}}</td>
+        <td>{{person.lastname}}</td>
+        <td>{{person.email}}</td>
+        <td>
+          <span *ngIf="person.personMother != null">
+            {{person.personMother.name}}
+            {{person.personMother.lastname}}
+          </span>
+        </td>
+        <td>
+          <span *ngIf="person.personFather != null">
+            {{person.personFather.name}}
+            {{person.personFather.lastname}}
+          </span>
+        </td>
+        <td></td>
+
+      </tr>
+    </tbody>
+    </table>
+</div>

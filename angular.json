@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demoCrud"
+    }
+  },
+  "defaultProject": "demoCrud",
+  "cli": {
+    "analytics": "58c26cb5-deab-4392-ac72-159b7354385c"
+  }
 }
